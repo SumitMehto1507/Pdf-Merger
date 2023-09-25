@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF-SM - Merger</title>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+
+   
+
+    #mynavbar {
+      background-color: rgb(68, 146, 206);
+      height: 60px;
+
+    }
+    #atag{
+      display: flex;
+      font-style: italic;
+      font-weight: 800;
+      font-size: 3rem;
+      color: black;
+      
+      text-decoration: none;
+      justify-content: center;
+      padding-top: 10px;
+      height: 40px;
+
+    }
+    #mainbox{
+      
+      text-align: center;
+      height: 100vh;
+      padding: 170px;
+      background-color: rgb(229, 207, 239);
+    }
+    #h1h{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 5rem;
+    }
+    #myforms{
+      font-family:  'Lucida Sans', Arial, sans-serif;
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      
+    }
+    .space{
+      margin: 4px;
+    }
+    #mybtn{
+      color: white;
+      background-color: blue;
+      text-decoration: none;
+      border-radius: 9px;
+      padding: 8px 10px;
+      margin: 8px;
+
+    }
+    #mybtn:hover{
+      
+      background-color: rgb(46, 50, 62);
+    }
+ 
+  </style>
+</head>
+<body>
+  
+<nav id="mynavbar">
+  <a  id="atag" href="/">PDF-SM</a>
+</nav>
+
+<div id="mainbox">
+  <h1 id="h1h">//   --- Pdf-SM - Merger ---   //</h1>
+  <form method="post" action="/merge" enctype="multipart/form-data">
+    <div id="myforms">
+      <label for="exampleFormControlFile1">Select your pdf file you want to merge*</label>
+      <div class="space"></div>
+      <input type="file" name="pdfs" class="form-control-file" id="exampleFormControlFile1" multiple accept=".pdf" />
+      <div></div>
+      <input id="mybtn" type="submit" value="Submit" />
+    </div>
+  </form>
+</div>
+
+  
+</body>
+</html> 

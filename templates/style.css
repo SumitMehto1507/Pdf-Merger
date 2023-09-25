@@ -1,0 +1,35 @@
+    
+
+    
+    
+    
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    .center {
+      display: flexbox;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+
+    #mynavbar {
+      background-color: rgb(68, 146, 206);
+      height: 60px;
+
+    }
+    #atag{
+      display: flex;
+      font-style: italic;
+      font-weight: 800;
+      color: black;
+      font-size: 2rem;
+      text-decoration: none;
+      justify-content: center;
+      padding-top: 20px;
+      height: 40px;
+
+    }
+ 
